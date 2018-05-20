@@ -4,6 +4,7 @@ pokemon_elegido = input('Contra que Pokemon quieres luchar? (Squirtle / Charmand
 vida_pikachu = 100
 vida_enemigo = 0
 ataque_enemigo = 0
+nombre_enemigo = 0
 
 if pokemon_elegido == 'Squirtle':
     vida_enemigo = 90
@@ -29,7 +30,7 @@ while vida_pikachu > 0 and vida_enemigo > 0:
 
     print('La vida de {} ahora es {}'.format(nombre_enemigo, vida_enemigo))
 
-     print('{} te hace un ataque'.format(nombre_enemigo))
+    print('{} te hace un ataque'.format(nombre_enemigo))
     vida_pikachu -= ataque_enemigo
 
     print('La vida de Pikachu es de {}'.format(vida_pikachu))
@@ -37,7 +38,7 @@ while vida_pikachu > 0 and vida_enemigo > 0:
 if vida_enemigo <= 0:
     print('Has ganado')
 
-elif vida_pikachu <= o:
+elif vida_pikachu <= 0:
     print('Has perdido')
 
 print('El combate ha terminado')
